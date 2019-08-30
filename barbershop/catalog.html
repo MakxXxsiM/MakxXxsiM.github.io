@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Барбершоп «Бродинский» каталог товаров</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
     <header class="main-header">
         <nav class="main-navigation">
             <a href="./index.html" class="main-header-logo">
@@ -36,7 +40,7 @@
         </ul>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>
@@ -82,7 +86,7 @@
                         </li>
                         <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                name="product-group" value="hair-care" id="hair-care">
+                                name="product-group" value="hair-care" id="hair-care" checked>
                             <label for="hair-care">Средства для ухода</label>
                         </li>
                         <li class="filter-option">
